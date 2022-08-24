@@ -1,0 +1,29 @@
+<div id="chart2">
+  <hello name="{{ name }}"></hello>
+  <p>Start editing to see some magic happen :)</p>
+
+  <ngx-charts-bar-vertical
+    [id]="id"
+    [view]="view"
+    [scheme]="colorScheme"
+    [results]="single"
+    [gradient]="gradient"
+    [xAxis]="showXAxis"
+    [yAxis]="showYAxis"
+    [legend]="showLegend"
+    [showXAxisLabel]="showXAxisLabel"
+    [showYAxisLabel]="showYAxisLabel"
+    [xAxisLabel]="xAxisLabel"
+    [yAxisLabel]="yAxisLabel"
+    (select)="onSelect($event)"
+  >
+  </ngx-charts-bar-vertical>
+
+  <button mat-menu-item (click)="imprimir()">
+    <span>Imprimir</span>
+  </button>
+
+  <button mat-menu-item (click)="descargarGrafica()">
+    <span>Descargar</span>
+  </button>
+</div>
