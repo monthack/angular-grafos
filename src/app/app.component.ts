@@ -46,7 +46,6 @@ export class AppComponent {
     html2canvas(document.querySelector('#chart2')).then((canvas) => {
       const doc = new jsPDF();
       const img = canvas.toDataURL();
-      console.log(img);
       doc.addImage(img, 'PNG', 0, 0, 100, 100);
       doc.save('gráfica.pdf');
     });
